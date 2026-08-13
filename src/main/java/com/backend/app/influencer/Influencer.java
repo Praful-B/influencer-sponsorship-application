@@ -24,6 +24,8 @@ public class Influencer {
     @Column(nullable = false)
     private String password;
 
+    private double engagementRate;
+
     @OneToOne(orphanRemoval = true, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private InfluencerSocialLinks influencerSocialLinks;
 
